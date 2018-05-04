@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
-    <!--<link rel="shortcut icon" href="/assets/img/efo-favicon.png"/>-->
+    <link rel="shortcut icon" href="/assets/img/efo-favicon.png"/>
     <!--<link rel="stylesheet" href="/assets/css/foundation.min.css">-->
     <link rel="stylesheet" href="/assets/css/bootstrap.min.css"/>
     <link rel="stylesheet" href="/assets/css/nav.css"/>
@@ -23,7 +23,7 @@
 <body id="particles-js" style="overflow-x: hidden;">
 <div class="jq-nav float-left float-sm-left" style="height: 100%;min-height: 100vh;position: fixed;">
     <div class="jq-nav-top">
-      <!--  <div id="mini" style="border-bottom:1px solid rgba(255,255,255,0.1)"><img src="/assets/img/mini.png"></div>-->
+        <div id="mini" style="border-bottom:1px solid rgba(255,255,255,0.1)"><img src="/assets/img/mini.png"></div>
     </div>
     <ul>
         <li class="jq-nav-item">
@@ -226,8 +226,8 @@
         <div class="col-12 col-sm-10 offset-sm-1 content-box rounded">
             <br/>
             <div class="text-right">
-                <button class="btn btn-primary" data-toggle="modal" data-target="#authAddedModal"><i
-                        class="glyphicon glyphicon-flash"></i> 新增
+                <button class="btn btn-primary" data-toggle="modal" data-target="#authAddedModal"
+                        onclick="authFileSearch='';"><i class="glyphicon glyphicon-flash"></i> 新增
                 </button>
                 <button class="btn btn-success" onclick="showFileModal('#auth-manager-table','#authEditModal');"><i
                         class="glyphicon glyphicon-edit"></i> 编辑
@@ -390,8 +390,8 @@
                         </div>
                     </td>
                     <td class="user-index" v-bind:data-key="key">{{key+1}}</td>
-                   <!-- <td><img v-bind:src="user.avatar ? user.avatar : '/assets/img/default-user.jpg'" width="30rem"
-                             height="30rem"></td>-->
+                    <td><img v-bind:src="user.avatar ? user.avatar : '/assets/img/default-user.jpg'" width="30rem"
+                             height="30rem"></td>
                     <td>{{user.username}}</td>
                     <td>{{user.realName}}</td>
                     <td>{{user.email}}</td>
